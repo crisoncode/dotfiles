@@ -1,0 +1,12 @@
+<div class="row shipping-info justify-content-center d-flex">
+    <div class="col-2 align-items-center d-flex justify-content-center">
+        <img class="sh-truck-image" src="${URLUtils.staticURL('/images/icon-truck.svg')}" alt="">
+    </div>
+    <div class="col-10 p-0">
+        <span class="sh-text-info font-weight-bold d-block sh-title">Standard delivery</span>
+
+        <span class="sh-text-info d-block sh-price">Free from 79€</span>
+
+        <span class="sh-text-info d-block sh-times">2-4 workdays</span>
+    </div>
+</div>

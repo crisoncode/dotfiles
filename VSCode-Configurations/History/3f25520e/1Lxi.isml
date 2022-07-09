@@ -1,0 +1,11 @@
+<div class="col-12 col-md-4">
+    <div class="product-title-container">
+        <span class="product-title" style="-webkit-box-orient: vertical;" itemprop="name">${product.productName}</span>
+    </div>
+    <isinclude template="product/productDetailRedesignComponents/prices" sf-toolkit="on" />
+    <isinclude template="product/productDetailRedesignComponents/variationsSelectors" sf-toolkit="on" />
+    <isinclude template="product/productDetailRedesignComponents/quantity" sf-toolkit="on" />
+    <isinclude template="product/productDetailRedesignComponents/addToCart" sf-toolkit="on" />
+    <isinclude template="product/productDetailRedesignComponents/whistList" sf-toolkit="on" />
+    <isinclude template="product/productDetailRedesignComponents/shippingTimeAndCost" sf-toolkit="on" />
+</div>

@@ -1,0 +1,182 @@
+
+#chooseBonusProductModal {
+    .bonus-product-item {
+        border-bottom: 2px solid $slightly-darker-gray;
+
+        &:last-child {
+            border: none;
+        }
+
+        &.selected {
+            background: $primary;
+            border-color: $primary;
+        }
+
+        .size-container {
+            .dropdown-item {
+                &.disabled {
+                    opacity: 0.5;
+
+                    @include hover-focus-active() {
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+
+    .image-gallery {
+        .productPicturebox {
+            ul {
+                width: 220px;
+                padding-left: 0;
+                margin-top: 20px;
+
+                picture {
+                    min-height: 250px;
+                }
+            }
+
+            .otherPictures {
+                display: none;
+            }
+        }
+
+        .product-detail-badge,
+        .product-detail-wishlist {
+            display: none;
+        }
+    }
+
+    .bonus-product-price {
+        padding: 10px;
+    }
+
+    .selected-bonus-products {
+        .selected-pid {
+            margin-top: 5px;
+            border-top: 1px solid $slightly-darker-gray;
+
+            .bonus-product-name {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+#chooseBonusProductModal {
+    .modal-footer {
+        .container {
+            margin-left: 0;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    .select-cbp-container {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .product-name-wrapper {
+        width: 100%;
+    }
+
+    .bonus-quantity,
+    .bonus-option {
+        margin-top: 0.938em;
+    }
+
+    .bonus-quantity-select {
+        min-width: 5em;
+    }
+
+    .select-bonus-product {
+        margin-top: 1em;
+    }
+
+    .selected-pid {
+        border: 1px solid $grey3;
+
+        .bonus-product-name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .bonus-product-price {
+        text-align: center;
+        margin-top: 1em;
+    }
+}
+
+// Zoom icon, modal and slider
+// -------------------------------------------------------
+.product-detail-photo-swipe {
+    i.icon-zoom-in {
+        display: none;
+        top: 70px;
+        position: absolute;
+        right: 29px;
+        z-index: 1;
+        line-height: 1;
+        font-size: 1.85rem;
+
+        @include media-breakpoint-up(md) {
+            top: 60px;
+        }
+    }
+
+    .pswp {
+        &__bg {
+            background-color: $white;
+        }
+
+        &__counter {
+            color: inherit;
+        }
+
+        &__button {
+            background-image: none !important;
+            font-size: 1rem;
+            color: $grey9;
+        }
+
+        &__img--placeholder {
+            display: none;
+        }
+
+        &__top-bar,
+        &__button--arrow--left::before,
+        &__button--arrow--right::before {
+            background-color: $maincolor !important;
+        }
+    }
+}
+
+.product-color-button {
+    visibility: hidden;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 1px solid $lighter-gray;
+    text-indent: -99999em;
+    color: $basefontcolor;
+    background: $white url(../images/product/colors-icon.svg) no-repeat center;
+    background-size: 55%;
+    right: 10px;
+    z-index: 2;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+    outline: none !important;
+
+    @include media-breakpoint-down(md) {
+        visibility: visible;
+        bottom: 15.7rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        bottom: 3rem;
+    }
+}

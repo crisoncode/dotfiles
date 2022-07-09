@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+<field formid="country" label="label.input.country" type="string" mandatory="true" binding="countryCode"
+           missing-error="error.message.required">
+    <options>
+        <option optionid="AL" label="select.option.country.albania" value="AL"/>
+        <option optionid="AD" label="select.option.country.andorra" value="AD"/>
+        <option optionid="US" label="select.option.country.australia" value="AU"/>
+        <option optionid="BY" label="select.option.country.belarus" value="BY"/>
+        <option optionid="BA" label="select.option.country.bosniaandherzegovina" value="BA"/>
+        <option optionid="BG" label="select.option.country.bulgaria" value="BG"/>
+        <option optionid="CA" label="select.option.country.canada" value="CA"/>
+        <option optionid="HR" label="select.option.country.croatia" value="HR"/>
+        <option optionid="CY" label="select.option.country.cyprus" value="CY"/>
+        <option optionid="EE" label="select.option.country.estonia" value="EE"/>
+        <option optionid="FO" label="select.option.country.faroe" value="FO"/>
+        <option optionid="FI" label="select.option.country.finland" value="FI"/>
+        <option optionid="GI" label="select.option.country.gibraltar" value="GI"/>
+        <option optionid="GR" label="select.option.country.greece" value="GR"/>
+        <option optionid="GL" label="select.option.country.greenland" value="GL"/>
+        <option optionid="HU" label="select.option.country.hungary" value="HU"/>
+        <option optionid="IS" label="select.option.country.iceland" value="IS"/>
+        <option optionid="IE" label="select.option.country.ireland" value="IE"/>
+        <option optionid="JP" label="select.option.country.japan" value="JP"/>
+        <option optionid="LV" label="select.option.country.latvia" value="LV"/>
+        <option optionid="LT" label="select.option.country.lithuania" value="LT"/>
+        <option optionid="LU" label="select.option.country.luxembourg" value="LU"/>
+        <option optionid="MK" label="select.option.country.macedonia" value="MK"/>
+        <option optionid="MT" label="select.option.country.malta" value="MT"/>
+        <option optionid="MD" label="select.option.country.moldavia" value="MD"/>
+        <option optionid="MC" label="select.option.country.monaco" value="MC"/>
+        <option optionid="NO" label="select.option.country.norway" value="NO"/>
+        <option optionid="PL" label="select.option.country.poland" value="PL"/>
+        <option optionid="PT" label="select.option.country.portugal" value="PT"/>
+        <option optionid="RO" label="select.option.country.romania" value="RO"/>
+        <option optionid="RU" label="select.option.country.russianfederation" value="RU"/>
+        <option optionid="SM" label="select.option.country.sanmarino" value="SM"/>
+        <option optionid="RS" label="select.option.country.serbia" value="RS"/>
+        <option optionid="SI" label="select.option.country.slovenia" value="SI"/>
+        <option optionid="TR" label="select.option.country.turkey" value="TR"/>
+        <option optionid="UA" label="select.option.country.ukraine" value="UA"/>
+        <option optionid="AE" label="select.option.country.unitedarabemirates" value="AE"/>
+        <option optionid="US" label="select.option.country.unitedstates" value="US"/>
+    </options>
+</field>
+</form>

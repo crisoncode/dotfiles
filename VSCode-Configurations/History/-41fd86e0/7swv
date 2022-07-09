@@ -1,0 +1,156 @@
+[2022-06-01 15:50:01.670 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing Executing job [export-orders-AzureAsyncProcessing][12251457]...
+[2022-06-01 15:50:01.701 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|Zerberus checker Executing step [Zerberus checker][52143308] for site [TPO-AT]...
+[2022-06-01 15:50:02.502 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|Zerberus checker OrderNo: 73638138 with data --> {"shippingAddr":{"orderNumber":"73638138","name":"Marc Lehner","street":"Marie-Andeßner-Platz","city":"Salzburg","zip":"5020","country":"Austria"},"billingAddr":{"orderNumber":"73638138","name":"Marc Lehner","street":"Marie-Andeßner-Platz","city":"Salzburg","zip":"5020","country":"Austria"}} response --> {"errorCode":"0","errorDescription":"No errors","matchValue":0,"countResults":0,"countGoodLinks":0,"badGuy":false,"responseDate":"20220601","responseTime":"174956"}
+[2022-06-01 15:50:02.977 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|Zerberus checker OrderNo: 73638126 with data --> {"shippingAddr":{"orderNumber":"73638126","name":"Gerald Enzmann","street":"Ackerweg","city":"Altmünster","zip":"4813","country":"Austria"},"billingAddr":{"orderNumber":"73638126","name":"Gerald Enzmann","street":"Ackerweg","city":"Altmünster","zip":"4813","country":"Austria"}} response --> {"errorCode":"0","errorDescription":"No errors","matchValue":0,"countResults":0,"countGoodLinks":0,"badGuy":false,"responseDate":"20220601","responseTime":"174956"}
+[2022-06-01 15:50:03.163 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|Zerberus checker OrderNo: 73638124 with data --> {"shippingAddr":{"orderNumber":"73638124","name":"Eva Schadwasser","street":"Thumergasse","city":"Kaltenleutgeben","zip":"2391","country":"Austria"},"billingAddr":{"orderNumber":"73638124","name":"Eva Schadwasser","street":"Thumergasse","city":"Kaltenleutgeben","zip":"2391","country":"Austria"}} response --> {"errorCode":"0","errorDescription":"No errors","matchValue":0,"countResults":0,"countGoodLinks":0,"badGuy":false,"responseDate":"20220601","responseTime":"174957"}
+[2022-06-01 15:50:03.334 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|Zerberus checker OrderNo: 73638129 with data --> {"shippingAddr":{"orderNumber":"73638129","name":"Dmitrii Pokhlebaev","street":"Ausstellungsstraße 50","city":"Wien","zip":"1020","country":"Austria"},"billingAddr":{"orderNumber":"73638129","name":"Dmitrii Pokhlebaev","street":"Ausstellungsstraße 50","city":"Wien","zip":"1020","country":"Austria"}} response --> {"errorCode":"0","errorDescription":"No errors","matchValue":0,"countResults":0,"countGoodLinks":0,"badGuy":false,"responseDate":"20220601","responseTime":"174957"}
+[2022-06-01 15:50:03.505 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|Zerberus checker OrderNo: 73638161 with data --> {"shippingAddr":{"orderNumber":"73638161","name":"Jürgen Vötsch","street":"Hausdorf","city":"Stallhofen","zip":"8152","country":"Austria"},"billingAddr":{"orderNumber":"73638161","name":"Jürgen Vötsch","street":"Hausdorf","city":"Stallhofen","zip":"8152","country":"Austria"}} response --> {"errorCode":"0","errorDescription":"No errors","matchValue":0,"countResults":0,"countGoodLinks":0,"badGuy":false,"responseDate":"20220601","responseTime":"174957"}
+[2022-06-01 15:50:03.527 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|Zerberus checker Execution of step [Zerberus checker] finished with status [OK].
+[2022-06-01 15:50:03.549 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143309] for site [CCO-DE]...
+[2022-06-01 15:50:03.648 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:03.667 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143310] for site [ITF-COM]...
+[2022-06-01 15:50:03.835 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.022 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143311] for site [JPO-AT]...
+[2022-06-01 15:50:04.048 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.065 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143312] for site [JPO-CH]...
+[2022-06-01 15:50:04.087 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.106 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143313] for site [JPO-COM]...
+[2022-06-01 15:50:04.128 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.144 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143314] for site [JPO-DE]...
+[2022-06-01 15:50:04.361 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.377 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143315] for site [JPO-FR]...
+[2022-06-01 15:50:04.401 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.418 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143316] for site [JPO-UK]...
+[2022-06-01 15:50:04.439 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.457 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143317] for site [PPO-BE]...
+[2022-06-01 15:50:04.496 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.513 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143318] for site [PPO-COM]...
+[2022-06-01 15:50:04.534 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.551 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143319] for site [PPO-DE]...
+[2022-06-01 15:50:04.577 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.593 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143320] for site [PPO-ES]...
+[2022-06-01 15:50:04.616 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.631 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143321] for site [PPO-FR]...
+[2022-06-01 15:50:04.656 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.674 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143322] for site [PPO-IT]...
+[2022-06-01 15:50:04.702 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.720 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143323] for site [PPO-SE]...
+[2022-06-01 15:50:04.747 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.765 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143324] for site [TPE-DE]...
+[2022-06-01 15:50:04.926 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:04.944 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143325] for site [TPO-AT]...
+[2022-06-01 15:50:05.266 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:05.286 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143326] for site [TPO-BE]...
+[2022-06-01 15:50:05.352 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:05.372 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143327] for site [TPO-CH]...
+[2022-06-01 15:50:05.437 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:05.460 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143328] for site [TPO-COM]...
+[2022-06-01 15:50:05.488 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:05.510 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143329] for site [TPO-CZ]...
+[2022-06-01 15:50:05.541 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:05.563 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143330] for site [TPO-DE]...
+[2022-06-01 15:50:08.350 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:08.375 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143331] for site [TPO-DK]...
+[2022-06-01 15:50:08.407 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:08.430 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143332] for site [TPO-ES]...
+[2022-06-01 15:50:08.546 GMT] ERROR CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] failed with status [ERROR]! com.demandware.core.script.capi.ScriptingException: Wrapped com.demandware.beehive.orm.capi.common.ORMOptimisticLockingException: Optimistic locking failure. Object couldn't be updated. [com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO, com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@58e4ff8f[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO) [ff5eb3ce695f1d0db4ce474117]], com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO) [ff5eb3ce695f1d0db4ce474117], OCA=486488881] (bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds#156)
+	at bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds:156 (setState)
+	at bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds:84 (anonymous)
+	at bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds:206 (anonymous)
+Caused by: com.demandware.core.script.capi.ScriptingException: Wrapped com.demandware.beehive.orm.capi.common.ORMOptimisticLockingException: Optimistic locking failure. Object couldn't be updated. [com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO, com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@58e4ff8f[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO) [ff5eb3ce695f1d0db4ce474117]], com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO) [ff5eb3ce695f1d0db4ce474117], OCA=486488881] (bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds#156)
+	at com.demandware.core.script2.capi.RhinoEvalScope.createScriptingException(RhinoEvalScope.java:616)
+	at com.demandware.core.script2.internal.scriptobject.JSFunctionImpl.call(JSFunctionImpl.java:79)
+	at com.demandware.beehive.core.internal.scripting2.ExecutableScriptModuleProvider$ExecutableScriptModule.execute(ExecutableScriptModuleProvider.java:215)
+	at com.demandware.beehive.core.internal.job.execution.ExecuteChunkScriptModuleStep.write(ExecuteChunkScriptModuleStep.java:177)
+	at com.demandware.beehive.core.internal.batch.chunk.JobStepItemReaderProcessorWriter.write(JobStepItemReaderProcessorWriter.java:65)
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.writeItems(SimpleChunkProcessor.java:193)
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doWrite(SimpleChunkProcessor.java:159)
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.write(SimpleChunkProcessor.java:294)
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:217)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:77)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:407)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:331)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:273)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:258)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:208)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:68)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:68)
+	at com.demandware.beehive.core.internal.batch.SpringBatchJobConverter$3.handle(SpringBatchJobConverter.java:1126)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at com.demandware.beehive.core.internal.batch.SpringBatchJobConverter$1.resume(SpringBatchJobConverter.java:543)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.support.state.SplitState$1.call(SplitState.java:94)
+	at org.springframework.batch.core.job.flow.support.state.SplitState$1.call(SplitState.java:91)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.job.flow.support.state.SplitState.handle(SplitState.java:101)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:169)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:144)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:137)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:320)
+	at com.demandware.beehive.core.internal.job.execution.JobLauncher.execute(JobLauncher.java:1014)
+	at com.demandware.beehive.core.internal.job.execution.JobLauncher.lambda$null$4(JobLauncher.java:1065)
+	at com.demandware.beehive.core.internal.job.execution.JobThreadContextProviderImpl.runWithJobThreadContext(JobThreadContextProviderImpl.java:45)
+	at com.demandware.beehive.core.internal.job.execution.JobLauncher.lambda$submitJob$5(JobLauncher.java:1063)
+	at com.demandware.beehive.orm.capi.transaction.ORMCallable.ormCall(ORMCallable.java:91)
+	at com.demandware.beehive.orm.capi.transaction.ORMCallable.call(ORMCallable.java:64)
+	at com.demandware.beehive.core.internal.job.PriorityRoutingJobThreadPoolExecutor$PriorityCallable.call(PriorityRoutingJobThreadPoolExecutor.java:273)
+	at com.demandware.core.logging2.concurrent.LogThreadContextCallable.call(LogThreadContextCallable.java:45)
+	at com.demandware.core.activity.ActivityCallable.call(ActivityCallable.java:120)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.demandware.kernel.ActivityThreadPoolExecutor$ActivityRunnableFuture.run(ActivityThreadPoolExecutor.java:246)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: script2.org.mozilla.javascript.WrappedException: Wrapped com.demandware.beehive.orm.capi.common.ORMOptimisticLockingException: Optimistic locking failure. Object couldn't be updated. [com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO, com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@58e4ff8f[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO) [ff5eb3ce695f1d0db4ce474117]], com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO) [ff5eb3ce695f1d0db4ce474117], OCA=486488881] (bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds#156)
+	at script2.org.mozilla.javascript.Context.throwAsScriptRuntimeEx(Context.java:1900)
+	at script2.org.mozilla.javascript.MemberBox.invoke(MemberBox.java:275)
+	at script2.org.mozilla.javascript.NativeJavaMethod.call(NativeJavaMethod.java:264)
+	at script2.org.mozilla.javascript.optimizer.OptRuntime.call1(OptRuntime.java:46)
+	at script2.org.mozilla.javascript.gen.bc_tennispoint_job_components_cartridge_scripts_components_ExportOrders_ds_479._c_setState_8(bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds:156)
+	at script2.org.mozilla.javascript.gen.bc_tennispoint_job_components_cartridge_scripts_components_ExportOrders_ds_479.call(bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds)
+	at script2.org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:77)
+	at script2.org.mozilla.javascript.gen.bc_tennispoint_job_components_cartridge_scripts_components_ExportOrders_ds_479._c_anonymous_4(bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds:84)
+	at script2.org.mozilla.javascript.gen.bc_tennispoint_job_components_cartridge_scripts_components_ExportOrders_ds_479.call(bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds)
+	at script2.org.mozilla.javascript.optimizer.OptRuntime.call2(OptRuntime.java:56)
+	at script2.org.mozilla.javascript.gen.bc_tennispoint_job_components_cartridge_scripts_components_ExportOrders_ds_479._c_anonymous_15(bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds:206)
+	at script2.org.mozilla.javascript.gen.bc_tennispoint_job_components_cartridge_scripts_components_ExportOrders_ds_479.call(bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds)
+	at script2.org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:412)
+	at com.demandware.core.script2.internal.engine.ScriptContextFactory.doTopCall(ScriptContextFactory.java:255)
+	at script2.org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3596)
+	at script2.org.mozilla.javascript.gen.bc_tennispoint_job_components_cartridge_scripts_components_ExportOrders_ds_479.call(bc_tennispoint_job_components/cartridge/scripts/components/ExportOrders.ds)
+	at com.demandware.core.script2.internal.scriptobject.JSFunctionImpl.call(JSFunctionImpl.java:75)
+	... 48 more
+Caused by: com.demandware.beehive.orm.capi.common.ORMOptimisticLockingException: Optimistic locking failure. Object couldn't be updated. [com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO, com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@58e4ff8f[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO) [ff5eb3ce695f1d0db4ce474117]], com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.bts.internal.orderprocess.fulfillment.OrderPO) [ff5eb3ce695f1d0db4ce474117], OCA=486488881]
+	at com.demandware.beehive.orm.internal.transaction.RelationalObjectInstanceStateWriter.verifyQueryResult(RelationalObjectInstanceStateWriter.java:311)
+	at com.demandware.beehive.orm.internal.transaction.RelationalObjectInstanceStateWriter.executeQuery(RelationalObjectInstanceStateWriter.java:173)
+	at com.demandware.beehive.orm.internal.transaction.RelationalObjectInstanceStateWriter.execute(RelationalObjectInstanceStateWriter.java:115)
+	at com.demandware.beehive.orm.internal.transaction.TransactionImpl.doStore(TransactionImpl.java:714)
+	at com.demandware.beehive.orm.internal.transaction.TransactionImpl.commit(TransactionImpl.java:385)
+	at com.demandware.beehive.core.internal.transaction.NestedTransaction.commit(NestedTransaction.java:169)
+	at dw.system.Transaction.wrap(Transaction.java:119)
+	at sun.reflect.GeneratedMethodAccessor810.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at script2.org.mozilla.javascript.MemberBox.invoke(MemberBox.java:247)
+	... 63 more
+
+[2022-06-01 15:50:08.572 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143333] for site [TPO-FR]...
+[2022-06-01 15:50:08.712 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:08.736 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143334] for site [TPO-IT]...
+[2022-06-01 15:50:09.262 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:09.287 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143335] for site [TPO-NL]...
+[2022-06-01 15:50:09.796 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:09.820 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143336] for site [TPO-SE]...
+[2022-06-01 15:50:09.887 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:09.912 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143337] for site [TPO-SK]...
+[2022-06-01 15:50:09.945 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:09.970 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Executing step [export-orders][52143338] for site [TPO-UK]...
+[2022-06-01 15:50:10.334 GMT] INFO CustomJobThread|10257541|export-orders-AzureAsyncProcessing|export-orders Execution of step [export-orders] finished with status [OK].
+[2022-06-01 15:50:10.356 GMT] ERROR CustomJobThread|10257541|export-orders-AzureAsyncProcessing Execution of job failed with status [ERROR]!

@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "shift+cmd+[Backslash]",
+        "command": "breadcrumbs.toggle"
+    },
+    {
+        "key": "shift+cmd+[Quote]",
+        "command": "workbench.action.toggleTabsVisibility"
+    }
+]

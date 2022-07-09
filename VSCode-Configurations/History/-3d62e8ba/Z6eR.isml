@@ -1,0 +1,16 @@
+<isset name="highlightsList" value="${pdict.product.featureHighlights}" scope="page" />
+<div class="highlights-item-container">
+    <div class="row">
+        <isloop items="${highlightsList}" var="highlight" status="loopstatus">
+            <div class="col-6">
+                <div class="highlight-item">
+                    <img class="highlight-item-icon" src="${URLUtils.staticURL('/images/product/highlights/' + highlight.key + '.svg')}" alt="" />
+                    <div class="highlight-item-content">
+                        <span class="highlight-item-title">${Resource.msg('product.highlights.' + highlight.key , 'product' , null)}</span>
+                        <span class="highlight-item-value"> ${highlight.value} </span>
+                    </div>
+                </div>
+            </div>
+        </isloop>
+    </div>
+</div>

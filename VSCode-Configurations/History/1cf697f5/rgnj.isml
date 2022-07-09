@@ -1,0 +1,17 @@
+<!-- Product Promo Callout -->
+<isset name="promotionMsgPageType" value="${'PDP'}" scope="page" />
+<div class="container mt-4">
+    <div class="row">
+        <div class="col js-promos center">
+            <isif condition="${product.promotions && product.promotions.length > 0}">
+                <isloop items="${product.promotions}" var="promotion" status="loopstatus">
+                    <isif condition="${promotion.details && promotion.calloutMsg}">
+                        <div class="callout center" title="${promotion.details}" data-promo-id="${promotion.id}">
+                            <isprint value="${promotion.calloutMsg}" encoding="off" />
+                        </div>
+                    </isif>
+                </isloop>
+            </isif>
+        </div>
+    </div>
+</div>

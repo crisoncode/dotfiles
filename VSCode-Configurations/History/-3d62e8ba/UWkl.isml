@@ -1,0 +1,25 @@
+<isset name="highlightsList" value="${pdict.product.featureHighlights}" scope="page" />
+<div class="highlights-item-container">
+    <div class="row">
+        <div class="col-6">
+            <isloop items="${highlightsList}" var="highlight" status="loopstatus">
+                <isif condition="${loopstatus.index < 3}">
+                    <div class="highlight-item">
+                        <img class="highlight-item-icon" src="${URLUtils.staticURL('/images/product/highlights/' + highlight.attributeID + '.svg')}" alt="" />
+                        <span class="highlight-item-title">${Resource.msg('product.highlights.' + highlight.translationKey , 'product' , null)}</span>
+                    </div>
+                </isif>
+            </isloop>
+        </div>
+        <div class="col-6">
+            <isloop items="${highlightsList}" var="highlight" status="loopstatus">
+                <isif condition="${loopstatus.index >= 3}">
+                    <div class="highlight-item">
+                        <img class="highlight-item-icon" src="${URLUtils.staticURL('/images/product/highlights/' + highlight.attributeID + '.svg')}" alt="" />
+                        <span class="highlight-item-title">${Resource.msg('product.highlights.' + highlight.attributeID , 'product' , null)}</span>
+                    </div>
+                </isif>
+            </isloop>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+.candela {
+    color: red;
+}
+@import "./../~bootstrap/scss/mixins/breakpoints";
+@import "./../~bootstrap/scss/mixins";
+@import './../~swiper/swiper-bundle';
+.cristian {
+    color: blue;
+}
+
+// grid system
+
+@import "components/rightSidebarSticky";
+@import "components/leftBlock";
+
+// components
+
+@import "components/commonProductDetail";
+@import "components/addToCart";
+@import "components/priceBlock";
+@import "components/title";
+@import "components/description";
+@import "components/features";
+@import "components/gallery";
+@import "components/reviews";
+@import "components/variationsSelectors";
+@import "components/stock";
+@import "components/whistList";
+@import "components/quantity";
+@import "components/shipping";
+@import "components/storeAvailability";

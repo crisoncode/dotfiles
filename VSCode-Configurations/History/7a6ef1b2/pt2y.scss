@@ -1,0 +1,197 @@
+@import './racketSizeSelector';
+// variations
+.va-selectors-container {
+    margin-top: 30px;
+
+    .va-selector {
+        margin-bottom: 30px;
+
+        .va-selector-label {
+            display: block;
+            font-weight: $font-weight-bold;
+            font-size: $fontsize-sm;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            color: $grey95;
+        }
+
+        .va-btn {
+            color: $grey95;
+            width: 100%;
+            text-align: left;
+            background-color: white;
+            border: 2px solid $grey95;
+            height: 58px;
+            font-weight: $font-weight-normal;
+            position: relative;
+
+            .btn-txt-bold {
+                color: $grey9;
+            }
+
+            .va-oneline-list-values {
+                color: $grey5;
+                text-transform: capitalize;
+            }
+
+            &::after {
+                right: 20px;
+                position: absolute;
+                top: calc(58px / 2 - 0.2em);
+                border-top: 0.4em solid;
+                border-right: 0.4em solid transparent;
+                border-bottom: 0;
+                border-left: 0.4em solid transparent;
+            }
+        }
+
+        .va-selector-dropdown {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            box-shadow: 0 6px 10px #0033;
+            max-height: 290px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            /* stylelint-disable */
+            -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+            scrollbar-width: none;  /* Hide scrollbar for Firefox */
+            /* stylelint-enable */
+
+            &.sizes-selector {
+                .va-item {
+                    padding: 10px;
+
+                    .va-name {
+                        font-size: 16px;
+                        color: $grey95;
+                    }
+                }
+            }
+
+            /* stylelint-disable */
+             /* Hide scrollbar for Chrome, Safari and Opera */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            /* stylelint-enable */
+
+            .va-item {
+                display: flex;
+                align-items: center;
+                height: 58px;
+                padding: 0;
+
+                &.va-selected {
+                    background-color: #0000000d;
+                }
+
+                &.sold-out {
+                    .va-name {
+                        color: #a9a9a9 !important;
+                    }
+                }
+
+                .va-image {
+                    max-height: 58px;
+                    width: auto;
+                    margin-right: 10px;
+                }
+
+                .va-name {
+                    font-size: $fontsize-sm;
+                    font-weight: $font-weight-normal;
+                    text-transform: capitalize;
+                    color: $grey5;
+                }
+
+                .oos-notification,
+                .va-item-size-shipping-info {
+                    margin-left: auto;
+                    font-size: 12px;
+                }
+
+                .oos-notification {
+                    background-color: #a9a9a9;
+                    color: white;
+                    padding: 2px 9px;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+
+.size-select {
+    background: none;
+
+    .modal-dialog {
+        margin-bottom: 10px;
+    }
+
+    &.form-control {
+        font-size: inherit;
+    }
+
+    // size dropdown btn
+    .dropdown-toggle {
+        width: 48%;
+        font-weight: normal;
+        background: $white;
+        position: relative;
+        z-index: 4;
+        text-align: left;
+
+        @include media-breakpoint-down(lg) {
+            width: 58%;
+        }
+
+        .label-selected + .label-default {
+            display: none;
+        }
+    }
+
+    // size dropdown options
+    .dropdown-menu {
+        margin-top: -1px;
+        border: 1px solid $slightly-darker-gray;
+        padding: 5px;
+        z-index: 3;
+        width: 94%;
+
+        @include media-breakpoint-down(lg) {
+            width: 93%;
+        }
+
+        .locales-labels {
+            margin: 26px auto 20px;
+            text-align: center;
+
+            .locale {
+                padding: 10px;
+                font-size: 15px;
+                color: #cecece;
+
+                &.active {
+                    color: #212121;
+                    border-bottom: 2px solid #444;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.shoes-va-selector {
+    .va-container-locale {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}

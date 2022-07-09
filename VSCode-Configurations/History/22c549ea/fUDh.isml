@@ -1,0 +1,22 @@
+<isset name="freeFromAmount" value="79" scope="page" />
+<isset name="currencySymbol" value="€" scope="page" />
+<isset name="shippingDays" value="2-4" scope="page" />
+<isset name="isCarrierLocatorEnabled" value="${dw.system.Site.getCurrent().getCustomPreferenceValue('CarrierLocatorEnabled')}" scope="page" />
+
+<iscomment> Shipping Time </iscomment>
+<div class="js-shipping-info-container d-none">
+    <div class="row shipping-info justify-content-center d-flex">
+        <div class="col-2 align-items-center d-flex justify-content-center">
+            <img class="sh-truck-image" src="${URLUtils.staticURL('/images/icon-truck.svg')}" alt="" />
+        </div>
+        <div class="col-10 p-0">
+            <span class="sh-text-info font-weight-bold d-block sh-title">${Resource.msg('shipping.standard.delivery','product', null)} </span>
+
+            <span class="sh-text-info d-block sh-price">${Resource.msgf('shipping.freefrom','product', null, freeFromAmount, currencySymbol)} </span>
+
+            <isif condition="${pdict.product.expectedDeliveryDate.duration && pdict.product.expectedDeliveryDate.durationMax}">
+                <span class="sh-text-info d-block sh-times">${Resource.msgf('shipping.days','product', null, pdict.product.expectedDeliveryDate.duration + '-' + pdict.product.expectedDeliveryDate.durationMax)} </span>
+            </isif>
+        </div>
+    </div>
+</div>

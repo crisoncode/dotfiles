@@ -1,0 +1,63 @@
+<div class="row justify-content-center">
+    <!-- Prices -->
+    <div class="col-12 prices mt-2 mb-2 mt-md-0 mb-md-0 prices-container">
+        <isinclude template="product/components/price" />
+    </div>
+
+    <div class="col-12 d-none d-md-block size-quantity mt-2 mt-md-4">
+        <!-- Sizes -->
+        <isif condition="${!product.hasNoSize}">
+            <isset name="sizeTilesLimit" value="${5}" scope="page" />
+            <isset name="isStoreInventorySizes" value="false" scope="page" />
+            <issize tpl="product/components/variationAttribute" />
+        </isif>
+
+        <!-- Delivery -->
+        <isinclude template="product/components/delivery" />
+
+        <!-- Quantitiy -->
+        <div class="simple-quantity">
+            <isinclude template="product/components/quantity" />
+        </div>
+    </div>
+
+    <isif condition="${product.options && product.options.length > 0}">
+        <isinclude template="product/components/options" />
+    </isif>
+
+    <!-- Tennis Racket Services only for these products -->
+    <isinclude template="product/components/services" />
+
+    <!-- Product Promo Callout -->
+    <isset name="promotionMsgPageType" value="${'PDP'}" scope="page" />
+    <isif condition="${product.promotionMessages && product.promotionMessages[promotionMsgPageType]}">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col">
+                    <isinclude template="product/components/promotions" />
+                </div>
+            </div>
+        </div>
+    </isif>
+
+    <div class="col-12 add-to-cart-actions">
+        <!-- Cart and [Optionally] Apple Pay -->
+        <isinclude template="product/components/addToCartProduct" />
+        <isinclude template="product/components/addToCartSticky" />
+    </div>
+
+    <!-- Shipping Costs -->
+    <isinclude url="${URLUtils.url('Product-GetShippingCosts', 'taxRate', product.taxRate, 'freeShipping', product.freeShipping)}" />
+
+    <!-- Packing Station Info -->
+    <isinclude template="cart/cartPackstationInfos" />
+
+    <!-- Store inventory list -->
+    <isif condition="${pdict.showStoreInventory && pdict.hasStoreInventories}">
+        <isinclude template="product/components/storeInventory" />
+        <isinclude template="product/components/storeInventoryModal"/>
+    </isif>
+
+    <!-- Sticky Bar -->
+    <isinclude template="product/components/stickyBar" />
+</div>

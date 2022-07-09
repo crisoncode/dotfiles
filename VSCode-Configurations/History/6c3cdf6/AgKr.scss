@@ -1,0 +1,13 @@
+body {
+    background-color: red!important;
+
+    .container.product-detail-comtainer {
+        .breadcrumb {
+            .breadcrumbitem {
+                a {
+                    color: $grey6;
+                }
+            }
+        }
+    }
+}

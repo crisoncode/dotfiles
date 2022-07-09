@@ -1,0 +1,15 @@
+body {
+    .container {
+        .breadcrumb {
+            .breadcrumbitem {
+                &.no-click {
+                    font-weight: $font-weight-bold;
+                }
+                a {
+                    color: $grey95;
+                    font-size: $fontsize-s;
+                }
+            }
+        }
+    }
+}

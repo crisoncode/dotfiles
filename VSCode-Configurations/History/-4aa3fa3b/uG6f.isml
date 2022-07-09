@@ -1,0 +1,83 @@
+<style>
+.gallery-container-js {
+  width: 600px;
+  height: 300px;
+}
+
+</style>
+<div class="row gallery-container mt-2 mt-md-0">
+    <iscomment> Gallery </iscomment>
+    <div class="col-12 col-md">
+
+        <!-- Slider main container -->
+        <div class="swiper swiper-container gallery-container-js">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <isloop items="${product.images.base}" var="image" status="loopStatus">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width: 69rem)" data-srcset="${image.url}&sw=500" />
+                                <source media="(min-width: 69rem) and (max-width: 82rem)"
+                                    data-srcset="${image.url}&sw=570" />
+                                <source media="(min-width: 82rem)" data-srcset="${image.url}&sw=640" />
+                                <img data-src="${image.url}&sw=640" alt="${product.brandName}" itemprop="image"
+                                    class="lazyload" />
+                            </picture>
+                        </div>
+                </isloop>
+            </div>
+        </div>
+
+
+        <!--<div class="row">
+            <isif condition="${product.images.base.length > 1}">
+                <div class="col-auto d-none d-md-flex flex-column otherPictures" id="morePicsContainer">
+                    <isloop items="${product.images.base}" var="image" status="loopStatus">
+                        <a data-slide-index="${loopStatus.index}">
+                            <img id="product-img-${loopStatus.index}-icon" src="${image.url}&sw=46" alt="${image.alt}" />
+                        </a>
+                    </isloop>
+                    <isif condition="${product.hasVideo}">
+                        <a class="large videoicon" data-toggle="collapse" data-parent="#details-accordion" href="#tabVideo">
+                            <i class="icon icon-videocam"></i>
+                        </a>
+                    </isif>
+                </div>
+            <iselseif condition="${product.hasVideo}">
+                <div class="otherPictures col-auto d-none d-md-flex flex-column" id="morePicsContainer">
+                    <a class="large videoicon" data-toggle="collapse" data-parent="#details-accordion" href="#tabVideo">
+                        <i class="icon icon-videocam"></i>
+                    </a>
+                </div>
+            </isif>
+            <div class="col productPicturebox js-product-picture-box">
+                <ul class="js-open-modal-photo-swipe">
+                    <isloop items="${product.images.base}" var="image" status="loopStatus">
+                        <li id="product-img-${loopStatus.index}">
+                            <a href="${image.url}&sw=2000" rel="${image.url}&sw=120" title="${image.title}"
+                                class="cloud-zoom" onclick="return false;">
+                                <picture>
+                                    <source media="(max-width: 69rem)" data-srcset="${image.url}&sw=500" />
+                                    <source media="(min-width: 69rem) and (max-width: 82rem)"
+                                        data-srcset="${image.url}&sw=570" />
+                                    <source media="(min-width: 82rem)" data-srcset="${image.url}&sw=640" />
+                                    <img data-src="${image.url}&sw=640" alt="${product.brandName}" itemprop="image"
+                                        class="lazyload" />
+                                </picture>
+                            </a>
+                        </li>
+                    </isloop>
+                </ul>
+            </div>
+        </div>-->
+    </div>
+
+    <iscomment> Brand logo & badges </iscomment>
+    <div class="col-12 col-md-auto logo-badges-container mr-md-2 mr-xl-4">
+        <isinclude template="product/productDetailRedesignComponents/logosAndBadges" sf-toolkit="on" />
+    </div>
+</div>

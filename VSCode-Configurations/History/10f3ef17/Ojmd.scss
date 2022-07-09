@@ -1,0 +1,12 @@
+.highlights-item-container {
+    .highlight-item {
+        &-icon {
+            width: 50px;
+        }
+        &-title {
+            text-transform: uppercase;
+            font-size: $fontsize-mlg;
+            color: $grey95;
+        }
+    }
+}

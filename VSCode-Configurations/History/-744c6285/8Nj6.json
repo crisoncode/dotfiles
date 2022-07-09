@@ -1,0 +1,193 @@
+{
+    "step-types": {
+        "pipeline-step": [
+            {
+                "@type-id": "custom.CustomFeeds",
+                "pipeline": "CustomFeeds-Process",
+                "description": "Custom Feeds Exports",
+                "parameters": {
+                    "parameter": [
+                        {
+                            "@name": "ExportCatalogs",
+                            "description": "Should we export catalogs?",
+                            "@type": "boolean",
+                            "@required": "false"
+                        },
+                        {
+                            "@name": "ExportCatalogMasters",
+                            "description": "Should we export master products from catalogs?",
+                            "@type": "boolean",
+                            "@required": "false"
+                        },
+                        {
+                            "@name": "ExportCatalogVariationGroups",
+                            "description": "Should we export variation-group products from catalogs?",
+                            "@type": "boolean",
+                            "@required": "false"
+                        },
+                        {
+                            "@name": "ExportOrders",
+                            "description": "Should we export orders?",
+                            "@type": "boolean",
+                            "@required": "false"
+                        },
+                        {
+                            "@name": "DaysToExportOrders",
+                            "description": "[Orders] # of days creationDate back",
+                            "@type": "long",
+                            "@required": "false"
+                        },
+                        {
+                            "@name": "ExportCustomers",
+                            "description": "Should we export customer profiles?",
+                            "@type": "boolean",
+                            "@required": "false"
+                        },
+                        {
+                            "@name": "DaysToExportCustomers",
+                            "description": "[Customers] # of days lastModified back",
+                            "@type": "long",
+                            "@required": "false"
+                        }
+                    ]
+                },
+                "status-codes": {
+                    "status": [
+                        {
+                            "@code": "ERROR",
+                            "description": "Error occurred when Custom Feeds pipeline was executed!"
+                        },
+                        {
+                            "@code": "OK",
+                            "description": "Pipeline 'CustomFeeds-Process' was executed successful!"
+                        }
+                    ]
+                }
+            }
+        ],
+        "script-module-step": [
+            {
+                "@type-id": "custom.CustomFeedsStep",
+                "timeout-in-seconds": "3600",
+                "module": "int_customfeeds/cartridge/scripts/export/jobsteps/CustomFeeds",
+                "function": "generate",
+                "parameters": {
+                    "parameter": []
+                }
+            },
+			{
+                "@type-id": "custom.fillBreadcrumbsCustomAttribute",
+                "timeout-in-seconds": "3600",
+                "module": "int_customfeeds/cartridge/scripts/export/jobsteps/CustomFeeds",
+                "function": "generate",
+                "parameters": {
+                    "parameter": []
+                }
+            }
+        ],
+        "chunk-script-module-step": [
+            {
+                "@type-id": "custom.ProductFeed",
+                "module": "int_customfeeds/cartridge/scripts/export/jobsteps/ProductFeed",
+                "description": "CSV Product-Feed",
+                "@supports-organization-context": "false",
+                "@supports-site-context": "true",
+                "before-step-function": "beforeStep",
+                "total-count-function": "getTotalCount",
+                "read-function": "read",
+                "process-function": "process",
+                "write-function": "write",
+                "after-step-function": "afterStep",
+                "chunk-size": 1,
+                "parameters": {
+                    "parameter": [
+                        {
+                            "@name": "ExportFeed",
+                            "description": "name of feed to export",
+                            "@type": "string",
+                            "@required": "true"
+                        },
+                        {
+                            "@name": "FeedLocale",
+                            "description": "Enter the feed locale to use",
+                            "@type": "string",
+                            "@required": "false"
+                        },
+                        {
+                            "@name": "ExportCatalogMasters",
+                            "description": "export master products from catalogs",
+                            "@type": "boolean",
+                            "@required": "false"
+                        },
+                        {
+                            "@name": "ExportCatalogVariationGroups",
+                            "description": "export variation-group products from catalogs",
+                            "@type": "boolean",
+                            "@required": "false"
+                        }
+                    ]
+                },
+                "status-codes": {
+                    "status": [
+                        {
+                            "@code": "ERROR",
+                            "description": "General error occured"
+                        },
+                        {
+                            "@code": "OK",
+                            "description": "Successful execution"
+                        }
+                    ]
+                }
+			},
+			{
+				"@type-id": "custom.AddressValidationReport",
+				"module": "int_customfeeds/cartridge/scripts/export/jobsteps/AddressValidationReport",
+				"description": "",
+				"@supports-organization-context": "false",
+                "@supports-site-context": "true",
+                "@supports-parallel-execution":"true",
+                "before-step-function":"beforeStep",
+                "read-function": "read",
+                "process-function": "process",
+                "write-function": "write",
+                "after-step-function":"afterStep",
+				"chunk-size":1,
+				"parameters": {
+					"parameter": [
+						{
+                            "@name": "FolderName",
+                            "description": "name of the folder to store the reports",
+                            "@type": "string",
+                            "@required": "true"
+						},
+						{
+							"@name": "ExportNotValidatedAddresses",
+							"description": "",
+							"@type": "boolean",
+							"@required": "false"
+						},
+						{
+							"@name": "ExportFullAddress",
+							"description": "",
+							"@type": "boolean",
+							"@required": "false"
+						}
+					]
+				},
+                "status-codes": {
+                    "status": [
+                        {
+                            "@code": "ERROR",
+                            "description": "General error occured"
+                        },
+                        {
+                            "@code": "OK",
+                            "description": "Successful execution"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+.test-racket-actions {
+    a:hover {
+        text-decoration: none;
+    }
+
+    .buy-now,
+    .info {
+        border: solid 2px $grey95;
+
+        span {
+            font-weight: bold;
+            font-size: $fontsize-base;
+            color: $grey95;
+            text-transform: uppercase;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $grey2;
+        }
+
+        &:active {
+            background-color: $grey95;
+
+            &::before {
+                filter: invert(100%);
+            }
+
+            span {
+                color: $white;
+            }
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .buy-now::before {
+        background: url(../images/product/icon-basket-2.svg) no-repeat center; // TODO-REDESIGN upload correct icons
+    }
+
+    .info::before {
+        background: url(../images/product/icon-info-circled-2.svg) no-repeat center; // TODO-REDESIGN upload correct icons
+    }
+}

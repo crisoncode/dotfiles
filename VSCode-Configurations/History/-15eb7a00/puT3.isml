@@ -1,0 +1,30 @@
+<isset name="freeFromAmount" value="79" scope="page" />
+<isset name="currencySymbol" value="€" scope="page" />
+<isset name="shippingDays" value="2-4" scope="page" />
+<isset name="isCarrierLocatorEnabled" value="${dw.system.Site.getCurrent().getCustomPreferenceValue('CarrierLocatorEnabled')}" scope="page" />
+
+<iscomment> Shipping Time </iscomment>
+<div class="js-shipping-info-container hidden">
+    <div class="row shipping-info justify-content-center d-flex">
+        <div class="col-2 align-items-center d-flex justify-content-center">
+            <img class="sh-truck-image" src="${URLUtils.staticURL('/images/icon-truck.svg')}" alt="" />
+        </div>
+        <div class="col-10 p-0">
+            <span class="sh-text-info font-weight-bold d-block sh-title">${Resource.msg('shipping.standard.delivery','product', null)} </span>
+
+            <span class="sh-text-info d-block sh-price">${Resource.msgf('shipping.freefrom','product', null, freeFromAmount, currencySymbol)} </span>
+
+            <span class="sh-text-info d-block sh-times">${Resource.msgf('shipping.days','product', null, shippingDays)} </span>
+        </div>
+    </div>
+</div>
+
+<iscomment> Product Shipping Costs </iscomment>
+<isinclude url="${URLUtils.url('Product-GetShippingCosts', 'taxRate', product.taxRate, 'freeShipping', product.freeShipping)}" />
+
+<iscomment> Packstation Info </iscomment>
+<isif condition="${isCarrierLocatorEnabled}">
+    <div class="text-muted small mt-3">
+        <p>${Resource.msg('info.packstation','cart',null)}</p>
+    </div>
+</isif>

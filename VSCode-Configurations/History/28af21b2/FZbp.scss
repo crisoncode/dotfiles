@@ -1,0 +1,541 @@
+@import "~bootstrap/scss/mixins/breakpoints";
+@import '~swiper/swiper-bundle';
+@import "../components/swiper";
+@import "../components/bxSlider";
+@import "../components/teaserSlider";
+@import "../utilities/teaserGrid";
+@import "../utilities/teaserStyles";
+@import "../components/dealOfDay";
+@import "../components/dealOfTheDay";
+@import "../components/skyscraper";
+
+// Teaser Grid
+// ---------------------------------
+
+.packery {
+    @include teaser-grid();
+}
+
+.hp-category-message,
+.hp-promotion-message {
+    position: absolute;
+    bottom: 0.9375em;
+    left: 1.875em;
+
+    a {
+        color: $white;
+    }
+
+    a.hp-promotion-message1 {
+        font-size: 0.75em;
+    }
+}
+
+.category-tile {
+    border: 1px solid white;
+}
+
+.container.home-categories {
+
+    @include media-breakpoint-only(xs) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.home-main-categories {
+    margin-bottom: 2em;
+}
+
+.hp-product-grid {
+    margin: 0;
+
+    .hp-product-content {
+        background-color: transparent; // remove if no longer using Bootstrap .card styles
+        text-align: center;
+        border: 0;
+
+        @include media-breakpoint-down(xs) {
+            min-height: 20.375em;
+        }
+
+        span {
+            font-size: 1em;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.85em;
+            }
+
+            @include media-breakpoint-down(xs) {
+                font-size: 0.65em;
+            }
+        }
+
+        span.largeText {
+            font-size: 5.5em;
+            font-weight: 200;
+
+            @include media-breakpoint-down(lg) { font-size: 4.5em; }
+
+            @include media-breakpoint-down(md) { font-size: 3.4em; }
+
+            @include media-breakpoint-down(sm) { font-size: 3em; }
+
+            @include media-breakpoint-down(xs) { font-size: 2.5em; }
+        }
+
+        a {
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+}
+
+// REDESIGN
+// Below this line styles for redesigned homepage only (TPO & JPO)
+// ---------------------------------------------------------------
+
+@if $enable-homepage-redesign {
+
+    // Home Main Teaser Slider & Home Small Teaser Slider (placed near the Product Tiles Slider)
+    // ---------------------------------
+
+    .home-mainteaser-slider,
+    .home-small-teaser-slider {
+        position: relative;
+
+        @if $enable-homepage-teaser {
+            // additional style for normal width teasers
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            background: $light-gray;
+            margin-bottom: 20px;
+
+            &.swiper-slide-active {
+                z-index: 2;
+            }
+
+            .home-teaser {
+                position: relative;
+                overflow: hidden;
+
+                > a {
+                    display: block;
+                }
+
+                @if $enable-homepage-fullwidth-teaser {
+                    .home-teaser-image {
+                        width: 100%;
+                        height: auto;
+                        transition: filter 400ms, -webkit-filter 400ms;
+
+                        &.swiper-lazy {
+                            opacity: 0;
+
+                            &.swiper-lazy-loaded {
+                                opacity: 1;
+                                min-height: inherit;
+                            }
+                        }
+
+                        @include media-breakpoint-up(sm) {
+                            position: absolute;
+                            left: 50%;
+                            top: 0;
+                            width: auto;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .home-teaser-text {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    padding: 20px;
+                    height: 100%;
+                    z-index: 2;
+                    pointer-events: none;
+
+                    @include media-breakpoint-up(sm) {
+                        padding: 10px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        padding: 0;
+                    }
+
+                    > .row {
+                        height: 100%;
+                        position: relative;
+                    }
+
+                    // all div.col
+                    div[class^="col"] {
+                        position: static;
+                    }
+
+                    .home-teaser-text-button {
+                        pointer-events: all;
+                    }
+                }
+            }
+        }
+    }
+
+    // Swiper slider full width containers
+    // ---------------------------------
+
+    .home-small-teaser-slider-wrapper {
+        overflow: hidden;
+    }
+
+    // Swiper slider navigation arrows
+    // ---------------------------------
+
+    .home-mainteaser-slider,
+    .home-small-teaser-slider,
+    .home-dealofday {
+        .swiper-navigation-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 100%;
+
+            .swiper-button-prev {
+                @include media-breakpoint-up(sm) {
+                    left: -30px;
+
+                    // Internet Explorer Fix
+                    .msie & {
+                        left: -50px;
+                    }
+                }
+            }
+
+            .swiper-button-next {
+                @include media-breakpoint-up(sm) {
+                    right: -30px;
+
+                    // Internet Explorer Fix
+                    .msie & {
+                        right: -50px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Swiper slider navigation arrows fix - Hide for Mobile
+    // ---------------------------------
+
+    .home-mainteaser-slider,
+    .home-small-teaser-slider,
+    .home-brand-worlds-slider {
+        .swiper-navigation-wrapper {
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: none;
+
+                @include media-breakpoint-up(lg) {
+                    display: block;
+
+                    &.swiper-button-disabled {
+                        // show pagination arrows always on desktop
+                        display: block;
+                        pointer-events: inherit;
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &.disabled-pagination {
+                .swiper-button-prev,
+                .swiper-button-next {
+                    @include media-breakpoint-up(lg) {
+                        &.swiper-button-disabled {
+                            // but hide, if pagination arrows is not available due to slide count
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Top Categories
+    // ---------------------------------
+
+    .top-category {
+        @include media-breakpoint-down(md) {
+            &.m2 {
+                margin-top: 2rem;
+            }
+        }
+
+        &.m4 {
+            margin-top: 1.5rem;
+
+            @include media-breakpoint-down(md) {
+                margin-top: 0;
+            }
+        }
+
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+
+        &.w-img {
+            @include media-breakpoint-down(md) {
+                margin-top: 1.2rem;
+            }
+        }
+
+        .top-category-link {
+            display: block;
+            position: relative;
+            background: $grey3;
+            min-height: 477px;
+
+            @include media-breakpoint-down(md) {
+                min-height: 279px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                min-height: 198px;
+            }
+
+            @include media-breakpoint-down(xs) {
+                min-height: 165px;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                img {
+                    opacity: 0.7;
+                    transition: opacity 0.5s ease-in-out;
+                }
+            }
+        }
+
+        .top-category-title {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-size: $fontsize-mlg;
+            color: $white;
+            background-color: rgba(20, 20, 20, 0.7);
+
+            @include media-breakpoint-down(md) {
+                font-size: $fontsize-lg;
+            }
+        }
+    }
+
+    // Product Tiles Slider
+    // ---------------------------------
+
+    // Product Slider with 12 products (used for TPO)
+    .home-producttiles-slider {
+        position: relative;
+
+        .tileslider {
+            overflow: hidden;
+            margin: 0 50px;
+
+            &.swiper-container-initialized {
+                .product-tile {
+                    height: auto;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                margin: 0;
+            }
+
+            .swiper-slide {
+                visibility: hidden;
+
+                @include media-breakpoint-down(sm) {
+                    width: 80%;
+                }
+            }
+
+            @include media-breakpoint-down(xs) {
+                .swiper-button-prev,
+                .swiper-button-next {
+                    display: none;
+                }
+            }
+        }
+
+        .product-tile {
+            height: 250px;
+            border: 2px solid $lighter-gray;
+        }
+
+        .swiper-button-prev {
+            @include media-breakpoint-down(md) {
+                left: -30px;
+            }
+        }
+
+        .swiper-button-next {
+            @include media-breakpoint-down(md) {
+                right: -30px;
+            }
+        }
+
+        .swiper-pagination {
+            display: none;
+        }
+    }
+
+    // Product Slider with reduced 4 products, which is no slider on Desktop but on Mobile (used for JPO)
+    .home-producttiles-slider-reduced {
+        .tileslider {
+            overflow: hidden;
+
+            &.swiper-container-initialized {
+                .product-tile {
+                    height: auto;
+                }
+            }
+        }
+
+        .swiper-slide {
+            visibility: hidden;
+
+            @include media-breakpoint-down(sm) {
+                width: 80%;
+            }
+        }
+
+        .product-tile {
+            height: 250px;
+            border: 2px solid $lighter-gray;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+
+            @include media-breakpoint-down(sm) {
+                display: block;
+            }
+
+            @include media-breakpoint-down(xs) {
+                display: none;
+            }
+        }
+
+        .swiper-button-prev {
+            @include media-breakpoint-down(md) {
+                left: -30px;
+            }
+        }
+
+        .swiper-button-next {
+            @include media-breakpoint-down(md) {
+                right: -30px;
+            }
+        }
+
+        .swiper-pagination {
+            display: none;
+
+            @include media-breakpoint-down(sm) {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .home-producttiles-slider-more { // "More" button
+        visibility: hidden;
+
+        @include media-breakpoint-down(sm) {
+            .btn-lg {
+                font-size: $fontsize-lg;
+            }
+        }
+    }
+
+    // Brand Bar
+    // ---------------------------------
+
+    .home-brand-bar-slider {
+        position: relative;
+        overflow: hidden;
+        margin: 3rem 0;
+
+        @include media-breakpoint-down(md) {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin: 0 0 2rem;
+        }
+
+        .swiper-slide {
+            @include media-breakpoint-down(sm) {
+                width: 40%;
+            }
+        }
+
+        li {
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                height: 85px;
+
+                img {
+                    max-width: 85%;
+                    max-height: 35px;
+                }
+            }
+        }
+    }
+
+    // Deal of the day
+    // ---------------------------------
+
+    @keyframes loader-spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .home-dealofday {
+        position: relative;
+
+        .loading {
+            width: 42px;
+            height: 42px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -21px;
+            margin-top: -21px;
+            z-index: 10;
+            transform-origin: 50%;
+            animation: loader-spin 1s infinite linear;
+            box-sizing: border-box;
+            border: 4px solid $primary;
+            border-top-color: transparent;
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+  "editor.lineHeight" : 22,
+  "prettier.singleQuote" : true,
+  "stylelint.snippet" : [
+    "css",
+    "less",
+    "postcss",
+    "scss"
+  ],
+  "tabnine.experimentalAutoImports" : true,
+  "editor.formatOnSaveMode" : "modifications",
+  "prettier.requireConfig" : true,
+  "editor.fontFamily" : "Victor mono",
+  "window.titleBarStyle" : "native",
+  "editor.fontSize" : 14,
+  "editor.fontWeight" : "700",
+  "workbench.editor.tabSizing" : "shrink",
+  "editor.minimap.enabled": false,
+  "prettier.trailingComma" : "all",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.sideBar.location" : "right",
+  "editor.fontLigatures": true,
+  "workbench.editor.showTabs" : false,
+  "editor.letterSpacing" : 1.2,
+  "emmet.includeLanguages" : {
+    "isml" : "html"
+  },
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "eslint.lintTask.enable": true,
+  "[javascript]" : {
+    "editor.defaultFormatter" : "esbenp.prettier-vscode"
+  },
+  "stylelint.configOverrides" : {
+    "js.validate" : false
+  },
+  "customizeUI.titleBar" : "frameless",
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  ​"editor.bracketPairColorization.enabled"​: ​true​, 
+  "editor.guides.bracketPairs": "active",
+  "prettier.embeddedLanguageFormatting": "off",
+  "extension.prophet.htmlhint.enabled": false,
+  "workbench.colorTheme": "Jetbrains Fleet",
+  "errorLens.enabled": true,
+  "extension.prophet.script.server.trace.server": "messages",
+  "extension.prophet.upload.enabled": true,
+  "editor.glyphMargin": true,
+  "editor.lineDecorationsWidth": 0,
+  "breadcrumbs.enabled": false,
+  "stylelint.config": {
+    "js.validate": false
+  },
+  "extension.prophet.script.server.disable.diagnostics": true,
+  "errorLens.enabledDiagnosticLevels": [
+    "warning",
+    "info",
+    "error"
+  ],
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false
+}
