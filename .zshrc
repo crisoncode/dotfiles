@@ -116,6 +116,8 @@ alias tpo="cd ~/projects/tennis-point-sfcc"
 alias gs="git status"
 alias webpack="npm run webpack:dev"
 alias testea="npm run test"
+alias dotfilesv="code ~/projects/vcode-workspaces/dotfiles.code-workspace"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
