@@ -1,5 +1,0 @@
-<isset name="highlightsList" value="${pdict.product.featureHighlights}" scope="page" />
-
-<isloop items="${highlightsList}" var="highlight" status="loopstatus">
-
-</isloop>

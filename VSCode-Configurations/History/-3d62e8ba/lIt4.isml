@@ -1,8 +1,0 @@
-<isset name="highlightsList" value="${pdict.product.featureHighlights}" scope="page" />
-<div class="highlights-item-container">
-<isloop items="${highlightsList}" var="highlight" status="loopstatus">
-    <div class="highlight-item">
-        <span class="highlight-item-title">${Resource.msg('product.highlights.'+highlight.attributeID, 'product')}</span>
-    </div>
-</isloop>
-</div>

@@ -1,3 +1,0 @@
-<div class="row">
-    ${URLUtils.staticURL('/images/icon-truck.svg')}
-</div>
