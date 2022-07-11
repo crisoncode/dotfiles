@@ -1,0 +1,7 @@
+[user]
+	email = c.estarlich@signa-sportsunited.com
+	name = Cristian Estarlich
+[core]
+	excludesfile = /Users/cristianestarlich/.gitignore_global
+[commit]
+	template = /Users/cristianestarlich/.stCommitMsg
