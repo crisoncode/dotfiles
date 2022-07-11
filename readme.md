@@ -25,7 +25,7 @@ My favourite extensions are:
 I use Victor mono as a typography in vscode:
 https://rubjo.github.io/victor-mono/
 
-### Iterm2
+## Iterm2
 
 For the bash I use Iterm2+zsh+Power10k, same as VSCode I like this app because is super customizable and fits with my obsession of minimalism while I'm working.
 
