@@ -118,7 +118,8 @@ alias webpack="npm run webpack:dev"
 alias testea="npm run test"
 alias dotfilesv="code ~/projects/vcode-workspaces/dotfiles.code-workspace"
 alias holden="cd ~/projects/holden-ford"
-
+alias bal="code ~/projects/vcode-workspaces/ballside.code-workspace"
+alias out="code ~/projects/vcode-workspaces/outfitter-sfcc.code-workspace"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

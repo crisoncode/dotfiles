@@ -14,5 +14,13 @@
 			"$2"
 		],
 		"description": "Log output to console"
+	},
+	"dwerror": {
+		"scope": "javascript,typescript",
+		"prefix": "dwerr",
+		"body": [
+			"dw.system.Logger.error('$1');",
+		],
+		"description": "SFCC typical error log"
 	}
 }
