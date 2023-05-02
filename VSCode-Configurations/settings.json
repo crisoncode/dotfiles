@@ -6,7 +6,7 @@
   "editor.fontSize" : 14,
   "editor.fontWeight" : "700",
   "workbench.editor.tabSizing": "shrink",
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.iconTheme": "vscode-icons",
   "editor.fontLigatures": true,
   "editor.letterSpacing" : 1.2,
   "bracket-pair-colorizer-2.depreciation-notice": false,
@@ -91,7 +91,7 @@
     "file:///Users/cristianestarlich/.vscode/extensions/atlassian.atlascode-3.0.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "redhat.telemetry.enabled": false,
-  "workbench.colorTheme": "Amethyst Dark",
+  "workbench.colorTheme": "Jetbrains Fleet",
   "editor.cursorBlinking": "expand",
   "editor.linkedEditing": true,
   "editor.cursorSmoothCaretAnimation": "on",
@@ -101,7 +101,13 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.fontAliasing": "antialiased",
   "workbench.editor.highlightModifiedTabs": true,
-  "window.nativeTabs": true,
   "search.defaultViewMode": "tree",
-  "window.zoomLevel": 1
+  "workbench.sideBar.location": "right",
+  "window.nativeTabs": true,
+  "window.zoomLevel": 1,
+  "errorLens.excludeBySource": [
+    "eslint(no-unused-vars)"
+  ],
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false
 }
