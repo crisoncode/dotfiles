@@ -7,5 +7,30 @@
     {
         "key": "shift+cmd+[Quote]",
         "command": "workbench.action.toggleTabsVisibility"
+    },
+    {
+        "key": "cmd+shift+a",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "cmd+shift+l",
+        "command": "workbench.action.toggleStatusbarVisibility"
+    },
+    {
+        "key": "cmd+shift+m",
+        "command": "editor.action.commentLine"
+    },
+    {
+        "key": "cmd+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+    },
+    {
+        "key": "cmd+u",
+        "command": "extension.prophet.command.enable.upload"
     }
 ]

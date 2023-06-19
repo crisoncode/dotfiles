@@ -1,113 +1,82 @@
 {
-  "editor.lineHeight" : 22,
-  "prettier.singleQuote" : true,
+  "editor.lineHeight" : 2,
   "editor.formatOnSaveMode" : "modifications",
-  "editor.fontFamily": "Victor mono",
+  "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
   "editor.fontSize" : 14,
   "editor.fontWeight" : "700",
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.iconTheme": "vscode-icons",
   "editor.fontLigatures": true,
   "editor.letterSpacing" : 1.2,
-  "bracket-pair-colorizer-2.depreciation-notice": false,
-  "eslint.lintTask.enable": true,
   "editor.accessibilitySupport": "off",
-  ​"editor.bracketPairColorization.enabled"​: ​true​, 
   "editor.guides.bracketPairs": "active",
-  "prettier.embeddedLanguageFormatting": "off",
-  "extension.prophet.htmlhint.enabled": false,
-  "errorLens.enabled": true,
-  "extension.prophet.script.server.trace.server": "messages",
-  "extension.prophet.upload.enabled": true,
   "editor.glyphMargin": true,
   "editor.lineDecorationsWidth": 0,
-  "extension.prophet.script.server.disable.diagnostics": true,
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "expand",
+  "editor.linkedEditing": true,
+  "editor.smoothScrolling": true,
+  "editor.renderWhitespace": "selection",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.guides.indentation": false,
+  "editor.overviewRulerBorder": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.stickyScroll.enabled": true,
+  
+  "focus.highlightRange": "block",
+
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.fontAliasing": "antialiased",
+  "workbench.tree.indent": 20,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Codely Dark",
+  "workbench.productIconTheme": "fluent-icons",
+
   "window.commandCenter": true,
-  "stylelint.configOverrides" : {
-    "js.validate" : false
+  "window.zoomLevel": 1,
+  "window.nativeTabs": true,
+
+
+  // formatters 
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  "git.mergeEditor": true,
+  
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+
+  "search.defaultViewMode": "tree",
+  
+  "symbols.hidesExplorerArrows": false,
+  
   "emmet.includeLanguages" : {
     "isml" : "html"
   },
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
-  "stylelint.snippet" : [
-    "css",
-    "less",
-    "postcss",
-    "scss"
-  ],
   "errorLens.enabledDiagnosticLevels": [
     "warning",
     "info",
     "error"
   ],
-  "workbench.colorCustomizations": {},
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "editor.stickyScroll.enabled": true,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "git.mergeEditor": true,
-  
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "comment"
-        ],
-        "settings": {
-          "fontStyle": "italic"
-          // "foreground": "#FF80AB"
-        }
-      },
-      {
-        "scope": [
-          "variable.parameter"
-        ],
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#FF8A65"
-        }
-      }
-    ]
-  },
-  "inlineFold.supportedLanguages": [
-    "html",
-    "svelte",
-    "vue",
-    "javascript",
-    "typescript",
-    "javascriptreact",
-    "typescriptreact",
-    "isml"
-  ],
-  "inlineFold.unfoldOnLineSelect": true,
-  "editor.minimap.enabled": false,
-  "yaml.schemas": {
-    "file:///Users/cristianestarlich/.vscode/extensions/atlassian.atlascode-3.0.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "redhat.telemetry.enabled": false,
-  "workbench.colorTheme": "Jetbrains Fleet",
-  "editor.cursorBlinking": "expand",
-  "editor.linkedEditing": true,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "[javascript]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  },
-  "explorer.confirmDragAndDrop": false,
-  "workbench.fontAliasing": "antialiased",
-  "workbench.editor.highlightModifiedTabs": true,
-  "search.defaultViewMode": "tree",
-  "workbench.sideBar.location": "right",
-  "window.nativeTabs": true,
-  "window.zoomLevel": 1,
   "errorLens.excludeBySource": [
     "eslint(no-unused-vars)"
   ],
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.visible": false
+
+  "mocha.files.glob": "test/unit/**/*.js",
+  "mocha.enabled": true,
+  "mocha.glob": "test/unit/**/*.js",
+  "mocha.nodeExec": "node",
+
+  "eslint.lintTask.enable": true,
+
+  "extension.prophet.htmlhint.enabled": false,
+  "errorLens.enabled": true,
+  "extension.prophet.script.server.trace.server": "messages",
+  "extension.prophet.upload.enabled": true,
+  "extension.prophet.script.server.disable.diagnostics": true,
 }
